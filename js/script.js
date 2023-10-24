@@ -46,7 +46,7 @@ createApp({
         this.currentImg = this.images.length - 1;
       }
     },
-    chageImg(thumbIndex) {
+    changeImg(thumbIndex) {
       this.currentImg = thumbIndex;
     },
   },
