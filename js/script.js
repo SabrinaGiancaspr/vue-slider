@@ -1,6 +1,6 @@
-const createApp = Vue.createApp;
+const app = Vue.createApp;
 
-createApp({
+app({
   data() {
     return {
       currentImg: 0,
@@ -49,5 +49,12 @@ createApp({
     changeImg(thumbIndex) {
       this.currentImg = thumbIndex;
     },
+  },
+
+  mounted: function () {
+    let time = this;
+    setInterval(function () {
+      time.nextButton();
+    }, 3000);
   },
 }).mount('#app');
